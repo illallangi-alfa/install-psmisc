@@ -1,0 +1,7 @@
+---
+- name: "Install psmisc"
+  package:
+    pkg: "{{ install_psmisc_packages[(ansible_os_family | lower) + '_' + (ansible_architecture | lower)] }}"
+    state: "present"
+  tags:
+    - "psmisc"

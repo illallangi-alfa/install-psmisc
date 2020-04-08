@@ -1,0 +1,6 @@
+---
+install_psmisc_packages:
+  debian: &debian
+    - "psmisc"
+  debian_armv7l: *debian
+  debian_x86_64: *debian
